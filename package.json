@@ -1,0 +1,43 @@
+{
+  "name": "socket.protocol.ws",
+  "version": "0.0.1",
+  "homepage": "https://github.com/luscus/socket.protocol.ws",
+  "author": "https://github.com/luscus/socket.protocol.ws/graphs/contributors",
+  "description": "Wraps the request and express packages to enable a simple usage of HTTP sockets",
+  "keywords": [
+    "network",
+    "socket",
+    "protocol",
+    "http",
+    "cluster",
+    "microservice"
+  ],
+  "dependencies": {
+    "assert-plus": "0.1.5",
+    "node.extend": "1.1.2",
+    "package.root": "0.2.0",
+    "restify": "2.8.4",
+    "socket.base": "0.0.2",
+    "socket.io": "1.3.3",
+    "socket.io-client": "1.3.3",
+    "socket.lib.tools": "0.0.2",
+    "socket.model.client": "0.0.2",
+    "socket.model.server": "0.0.1"
+  },
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-license-report": "0.0.8",
+    "grunt-contrib-clean": "0.5.0",
+    "grunt-contrib-jshint": "0.10.0",
+    "grunt-mocha-test": "0.10.2",
+    "load-grunt-tasks": "0.6.0",
+    "chai": "1.9.1",
+    "mocha": "1.21.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:luscus/socket.protocol.ws.git"
+  },
+  "main": "./lib/socket.protocol.ws",
+  "bugs": "https://github.com/luscus/node-socket.protocol.ws/issues"
+}
