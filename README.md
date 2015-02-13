@@ -1,10 +1,12 @@
 # socket.protocol.ws
+
+[![NPM](https://nodei.co/npm/socket.protocol.ws.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/socket.protocol.ws/)
+
 [![NPM version](https://img.shields.io/npm/v/socket.protocol.ws.svg?style=flat)](https://www.npmjs.com/package/socket.protocol.ws "View this project on NPM")
-[![NPM downloads](https://img.shields.io/npm/dm/socket.protocol.ws.svg?style=flat)](https://www.npmjs.com/package/socket.protocol.ws "View this project on NPM")
 [![David](https://img.shields.io/david/luscus/socket.protocol.ws.svg?style=flat)](https://david-dm.org/luscus/socket.protocol.ws)
 [![David](https://img.shields.io/david/dev/luscus/socket.protocol.ws.svg?style=flat)](https://david-dm.org/luscus/socket.protocol.ws#info=devDependencies)
 [![NPM license](https://img.shields.io/npm/l/socket.protocol.ws.svg?style=flat)](https://www.npmjs.com/package/socket.protocol.ws "View this project on NPM")
-[![flattr](https://img.shields.io/badge/flattr-donate-yellow.svg?style=flat)](http://flattr.com/thing/3817419/luscus-on-GitHub)
+[![Omniref](https://img.shields.io/badge/Omniref-docs-orange.svg?style=flat)](https://www.omniref.com/js/npm/socket.protocol.ws)
 
 Enables sockets to communicate with a service cluster over multiple hosts and processes using the WS protocol.
 
