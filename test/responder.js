@@ -1,5 +1,5 @@
 // testing
-var zmqLib = require('../lib/socket.protocol.http.js'),
+var zmqLib = require('../lib/socket.protocol.ws.js'),
     service = {
       name: 'zmqTest'
     },
@@ -28,8 +28,6 @@ var responseCount = 0;
 
 socket.bind(function (data, meta, raw) {
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
-  console.log('raw:    ', raw);
-  console.log('meta:   ', meta);
   console.log('data: ', data);
 
   if (responseCount === 400) {
