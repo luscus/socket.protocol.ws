@@ -1,6 +1,6 @@
 {
   "name": "socket.protocol.ws",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/luscus/socket.protocol.ws",
   "author": "https://github.com/luscus/socket.protocol.ws/graphs/contributors",
   "description": "Wraps the request and express packages to enable a simple usage of HTTP sockets",
