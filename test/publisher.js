@@ -10,6 +10,7 @@ var zmqLib = require('../lib/socket.protocol.ws.js'),
     server = {
       name: 'server',
       pattern: 'pub',
+      format: 'packet.format.latencies',
       port: [22000, 22001]
     };
 
@@ -23,22 +24,6 @@ socket.on('listen', function (url) {
 */
 
 var socket = zmqLib(server);
-
-var responseCount = 0;
-
-socket.bind(function (data, meta, raw) {
-  console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
-  console.log('data: ', data);
-
-  if (responseCount === 400) {
-    process.exit();
-  }
-
-  responseCount += 1;
-  data.responder = new Date().toISOString();
-
-  return data;
-});
 
 
 setInterval(function () {

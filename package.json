@@ -16,11 +16,12 @@
     "assert-plus": "0.1.5",
     "node.extend": "1.1.2",
     "package.root": "0.2.0",
-    "socket.base": "0.0.10",
+    "socket.base": "0.0.11",
     "socket.io": "1.3.3",
     "socket.io-client": "1.3.3"
   },
   "devDependencies": {
+    "packet.format.latencies": "0.0.1",
     "grunt": "0.4.5",
     "grunt-license-report": "0.0.8",
     "grunt-contrib-jshint": "0.11.0",

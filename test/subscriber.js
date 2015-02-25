@@ -25,13 +25,8 @@ var zmqLib = require('../lib/socket.protocol.ws.js'),
 
 var socket = zmqLib(client);
 
-socket.on('message', function (packet, clusterSource) {
-  console.log('<<<<<<<<<<<<<<<<<<<<<');
-  console.log('response at : ', new Date().toISOString(), 'from', clusterSource, packet.header);
-});
-
 socket.connect(server, function (packet, clusterSource) {
   console.log('<<<<<<<<<<<<<<<<<<<<<');
-  console.log('message at : ', new Date().toISOString(), 'from', clusterSource, packet.header);
+  console.log('message at : ', new Date().toISOString(), 'from', clusterSource, packet);
 });
 //socket.connect(server.protocol+'://localhost:'+22001);

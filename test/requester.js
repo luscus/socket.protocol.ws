@@ -1,5 +1,5 @@
 // testing
-var zmqLib = require('../lib/socket.protocol.ws.js'),
+var zmqLib = require('../lib/socket.protocol.ws'),
     service = {
       name: 'zmqTest'
     },
@@ -10,6 +10,7 @@ var zmqLib = require('../lib/socket.protocol.ws.js'),
     server = {
       name: 'server',
       host: ['localhost'],
+      format: 'packet.format.latencies',
       pattern: 'rep',
       port: [22000, 22001]
     };
@@ -27,14 +28,19 @@ var socket = zmqLib(client);
 
 socket.on('message', function (packet, clusterSource) {
   console.log('<<<<<<<<<<<<<<<<<<<<<');
-  console.log('response at : ', new Date().toISOString(), 'from', clusterSource, packet.header);
+  console.log('response at : ', new Date().toISOString(), 'from', clusterSource);
+  console.log('packet.header: ', packet.header);
+  console.log('packet.format: ', packet.format);
+  console.log('packet.id: ', packet.id);
 });
 
 socket.connect(server);
 //socket.connect(server.protocol+'://localhost:'+22001);
 
 setInterval(function () {
-    console.log('--------------');
-    console.log('sending: ', {pid:process.pid,timestamp: new Date().toISOString()});
-  socket.send({requester: new Date().toISOString()});
+  var data = {pid:process.pid,timestamp: new Date().toISOString()};
+
+    console.log('--------------------------------------');
+    console.log('sending: ', data);
+  socket.send(data);
 }, 1000);
