@@ -31,6 +31,7 @@ socket.bind(function (data, meta, raw) {
 
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
   console.log('data: ', data);
+  console.log('meta: ', meta);
 
   if (responseCount === 400) {
     process.exit();
